@@ -12,8 +12,30 @@
 
             gtag('config', 'UA-165934176-1');
         </script>
+
+        <!-- Google Analytics -->
+        <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-54516992-1', 'auto');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <!-- End Google Analytics -->
+
+        <script>
+            function send() {
+                console.log('send');
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'demo',
+                    eventAction: 'demo-action',
+                    eventLabel: 'Demo Campaign',
+                    eventValue: 0
+                });
+            }
+        </script>
     </head>
     <body>
         <h1>Hello World</h1>
+        <button onclick="send()">click to send ga event</button>
     </body>
 </html>
