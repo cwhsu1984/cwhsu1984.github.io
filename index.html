@@ -12,23 +12,19 @@
         <!-- End Google Tag Manager -->
 
         <script>
-            function send() {
-                console.log('send');
-                ga('send', {
-                    hitType: 'event',
-                    eventCategory: 'demo',
-                    eventAction: 'demo-action',
-                    eventLabel: 'Demo Campaign',
-                    eventValue: 0
-                });
+            function send(item) {
+                console.log('buy movie '+item);
             }
         </script>
     </head>
     <body>
-        <h1>Hello World</h1>
-        <h2>Now we get gtag and ga event</h2>
-        <h2>Now we integrate GTM to fire gtag and ga event for us</h2>
-        <button onclick="send()">click to send ga event</button>
+        <h1>Movie List</h1>
+        <span>
+            <button onclick="send('starwars')" class="movie" id="starwars">starwars</button>
+        </span>
+        <span>
+            <button onclick="send('dune')" class="movie" id="dune">dune</button>
+        </span>
 
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV6V3P5"
