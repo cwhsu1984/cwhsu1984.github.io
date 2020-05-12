@@ -1,37 +1,52 @@
 <html>
-    <head>
-        <title>
-            World Hello
-        </title>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MV6V3P5');</script>
-        <!-- End Google Tag Manager -->
 
-        <script>
-            function send(item) {
-                console.log('buy movie '+item);
-            }
-        </script>
-    </head>
-    <body>
-        <h1>Movie List</h1>
-        <span>
-            <button onclick="send('starwars')" class="movie" id="starwars">starwars</button>
-        </span>
-        <span>
-            <button onclick="send('dune')" class="movie" id="dune">dune</button>
-        </span>
-        <span>
-            <button onclick="send('fair')" class="movie" id="fair">fair</button>
-        </span>
+<head>
+    <title>
+        World Hello
+    </title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MV6V3P5');</script>
+    <!-- End Google Tag Manager -->
 
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV6V3P5"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-    </body>
+    <script>
+        function send(item) {
+            console.log('buy movie ' + item);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Movie List</h1>
+    <span>
+        <button onclick="send('starwars')" class="movie" id="starwars">starwars</button>
+    </span>
+    <span>
+        <button onclick="send('dune')" class="movie" id="dune">dune</button>
+    </span>
+    <span>
+        <button onclick="send('fair')" class="movie" id="fair">fair</button>
+    </span>
+    <span>
+        <button onclick="send('yygg')" class="hot-movie" movie-name='ggyy' id="fair">yygg</button>
+    </span>
+    <span>
+        <button onclick="send('test01')" class="hot-movie" movie-name='test01' id="fair">test02</button>
+    </span>
+    <span>
+        <button onclick="send('test01')" class="test01" movie-name='test03' id="fair">test03</button>
+    </span>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV6V3P5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
 </html>
