@@ -21,10 +21,12 @@
         }
         function pushDataLayer(item) {
             dataLayer.push({
-                'event': 'new_purchase',
                 'movie': {
                     'name': item
                 }
+            });
+            dataLayer.push({
+                'event': 'new_purchase',
             });
         }
     </script>
