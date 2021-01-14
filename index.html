@@ -19,6 +19,13 @@
         function send(item) {
             console.log('buy movie ' + item);
         }
+        function pushDataLayer(item) {
+            dataLayer.push({
+                'movie': {
+                    'name': "'" + item + "'"
+                }
+            });
+        }
     </script>
     <!-- anti-flicker snippet (recommended)  -->
     <style>.async-hide { opacity: 0 !important} </style>
@@ -31,6 +38,9 @@
 
 <body>
     <h1>Movie List</h1>
+    <span>
+        <button onclick="pushDataLayer('starwars')" class="movie" id="starwars">starwars</button>
+    </span>
     <span>
         <button onclick="send('starwars')" class="movie" id="starwars">starwars</button>
     </span>
